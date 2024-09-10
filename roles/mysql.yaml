@@ -1,0 +1,5 @@
+- name: create mysql through roles
+  hosts: mysql
+  become: yes
+  roles:
+    - mysql
