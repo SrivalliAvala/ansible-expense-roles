@@ -1,0 +1,5 @@
+- name: create nodejs through roles
+  hosts: backend
+  become: yes
+  roles:
+    - backend
