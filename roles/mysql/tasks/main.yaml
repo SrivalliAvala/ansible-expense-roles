@@ -4,11 +4,15 @@
     - PyMySQL
     executable: pip3.9
 - name: install MySQL Server
+  tags:
+    - configure
   ansible.builtin.package:
     name: mysql-server
     state: present
 
 - name: start mysql server
+  tags:
+    - configure
   ansible.builtin.service:
     name: mysqld
     state: started
